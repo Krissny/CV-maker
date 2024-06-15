@@ -7,6 +7,7 @@ import { Education } from "./components/Education";
 import data from "./assets/data";
 import "./style.css";
 import { useState } from "react";
+import Logo from "./assets/logo.png";
 
 function App() {
   let local_data;
@@ -24,6 +25,7 @@ function App() {
   return (
     <>
       <header>
+        <img src={Logo}></img>
         <h1>CV Maker</h1>
       </header>
       <div className="container">
@@ -45,7 +47,12 @@ function App() {
             workExp={resumeData.workExperience}
             edu={resumeData.education}
           ></Doc>
-          <button onClick={() => window.print()}>Print</button>
+          <button
+            onClick={() => window.print()}
+            style={{ marginBottom: "2rem" }}
+          >
+            Print
+          </button>
         </div>
       </div>
     </>

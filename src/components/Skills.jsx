@@ -24,7 +24,7 @@ export default function Skills({ data, onChange }) {
           create(e);
         }}
       >
-        <input type="text" />
+        <input type="text" style={{ width: "50%" }} />
         <button type="submit" className="btn">
           Add Skill +
         </button>

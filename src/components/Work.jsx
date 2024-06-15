@@ -40,23 +40,23 @@ export default function Work({ data, onChange }) {
         }}
       />
       <label htmlFor="">Responsibilities I</label>
-      <input
+      <textarea
         type="text"
         value={data.workExperience[0].responsibilities[0]}
         onChange={(e) => {
           list[0].responsibilities[0] = e.target.value;
           onChange({ ...data, workExperience: list });
         }}
-      />
+      ></textarea>
       <label htmlFor="">Responsibilities II</label>
-      <input
+      <textarea
         type="text"
         value={data.workExperience[0].responsibilities[1]}
         onChange={(e) => {
           list[0].responsibilities[1] = e.target.value;
           onChange({ ...data, workExperience: list });
         }}
-      />
+      ></textarea>
     </div>
   );
 }
